@@ -19,6 +19,7 @@
     "node.js",
     "react-native.js",
     "weapp.js",
+    "nativescript.js",
     "dist/",
     "lib/",
     "LICENSE",
@@ -29,11 +30,10 @@
     "react-native": false
   },
   "dependencies": {
-    "@babel/runtime-corejs3": "7.11.2",
     "@babel/runtime": "7.11.2",
+    "@babel/runtime-corejs3": "7.11.2",
     "react-native-crypto-js": "1.0.0",
     "uuid": "3.4.0",
-    "ws": "7.3.1",
     "xmlhttprequest": "1.8.0"
   },
   "devDependencies": {

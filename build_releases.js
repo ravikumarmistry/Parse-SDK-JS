@@ -44,6 +44,9 @@ exec(`${crossEnv} PARSE_BUILD=node ${gulp} compile`);
 console.log('React Native Release:');
 exec(`${crossEnv} PARSE_BUILD=react-native ${gulp} compile`);
 
+console.log('Nativescript Release:');
+exec(`${crossEnv} PARSE_BUILD=nativescript ${gulp} compile`);
+
 console.log('Bundling and minifying for CDN distribution:');
 exec(`${gulp} browserify`);
 exec(`${gulp} browserify-weapp`);

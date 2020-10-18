@@ -406,6 +406,8 @@ module.exports = LocalDatastore;
 
 if (process.env.PARSE_BUILD === 'react-native') {
   CoreManager.setLocalDatastoreController(require('./LocalDatastoreController.react-native'));
+} else if (process.env.PARSE_BUILD === 'nativescript') {
+  CoreManager.setLocalDatastoreController(require('./LocalDatastoreController.react-native'));
 } else {
   CoreManager.setLocalDatastoreController(require('./LocalDatastoreController'));
 }

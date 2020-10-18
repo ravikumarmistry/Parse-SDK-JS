@@ -485,6 +485,8 @@ if (process.env.PARSE_BUILD === 'node') {
   CoreManager.setWebSocketController(require('./Socket.weapp'));
 } else if (process.env.PARSE_BUILD === 'react-native') {
   CoreManager.setWebSocketController(WebSocket);
+} else if (process.env.PARSE_BUILD === 'nativescript') {
+  CoreManager.setWebSocketController(require('nativescript-websockets').WebSocket);
 }
 
 export default LiveQueryClient;
