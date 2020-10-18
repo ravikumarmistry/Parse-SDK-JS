@@ -6,8 +6,10 @@ var insert     = require('gulp-insert');
 var path       = require('path');
 var rename     = require('gulp-rename');
 var source     = require('vinyl-source-stream');
-var uglify     = require('gulp-uglify');
 var watch      = require('gulp-watch');
+var uglifyes = require('uglify-es');
+var composer = require('gulp-uglify/composer');
+var uglify = composer(uglifyes, console);
 
 var BUILD = process.env.PARSE_BUILD || 'browser';
 var VERSION = require('./package.json').version;
