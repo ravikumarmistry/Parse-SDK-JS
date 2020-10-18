@@ -115,7 +115,7 @@ module.exports = Storage;
 if (process.env.PARSE_BUILD === 'react-native') {
   CoreManager.setStorageController(require('./StorageController.react-native'));
 } else if (process.env.PARSE_BUILD === 'nativescript') {
-  CoreManager.setStorageController(require('./StorageController.react-native'));
+  CoreManager.setStorageController(require('./StorageController.nativescript'));
 } else if (process.env.PARSE_BUILD === 'browser') {
   CoreManager.setStorageController(require('./StorageController.browser'));
 } else if (process.env.PARSE_BUILD === 'weapp') {
