@@ -36,7 +36,7 @@ const StorageController = {
   },
 
   getAllKeys() {
-    return this.getStorage().getAllKeys(path);
+    return this.getStorage().getAllKeys();
   },
 
   clear() {
