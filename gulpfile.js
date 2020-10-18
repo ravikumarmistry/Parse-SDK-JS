@@ -29,7 +29,8 @@ var PRESETS = {
   'node': [["@babel/preset-env", {
     "targets": { "node": "8" }
   }]],
-  'react-native': ['module:metro-react-native-babel-preset']
+  'react-native': ['module:metro-react-native-babel-preset'],
+  'nativescript': ['module:metro-react-native-babel-preset']
 };
 var PLUGINS = {
   'browser': [transformRuntime, '@babel/plugin-transform-flow-comments', '@babel/plugin-proposal-class-properties', 'inline-package-json',
