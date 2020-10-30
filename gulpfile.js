@@ -30,6 +30,7 @@ var PRESETS = {
     "targets": { "node": "8" }
   }]],
   'react-native': ['module:metro-react-native-babel-preset'],
+  'nativescript': ['module:metro-react-native-babel-preset']
 };
 var PLUGINS = {
   'browser': [transformRuntime, '@babel/plugin-transform-flow-comments', '@babel/plugin-proposal-class-properties', 'inline-package-json',
@@ -37,7 +38,8 @@ var PLUGINS = {
   'weapp': [transformRuntime, '@babel/plugin-transform-flow-comments', '@babel/plugin-proposal-class-properties', 'inline-package-json',
     ['transform-inline-environment-variables', {'exclude': ['SERVER_RENDERING']}]],
   'node': ['@babel/plugin-transform-flow-comments', 'inline-package-json', 'transform-inline-environment-variables'],
-  'react-native': ['@babel/plugin-transform-flow-comments', 'inline-package-json', 'transform-inline-environment-variables']
+  'react-native': ['@babel/plugin-transform-flow-comments', 'inline-package-json', 'transform-inline-environment-variables'],
+  'nativescript': ['@babel/plugin-transform-flow-comments', 'inline-package-json', 'transform-inline-environment-variables']
 };
 
 var DEV_HEADER = (
